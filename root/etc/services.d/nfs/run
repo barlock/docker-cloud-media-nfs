@@ -1,0 +1,20 @@
+#!/usr/bin/with-contenv sh
+
+while [ -z "$(ls -A /local-union)" ]
+do
+    echo "Waiting for mount /local-union ..."
+    sleep 10
+done
+
+. "/etc/default/nfs-kernel-server"
+
+# Reexport all directories
+/usr/sbin/exportfs -rv
+
+rpcbind
+
+# Start the NFS server process
+/usr/sbin/rpc.nfsd --debug --no-udp --no-nfs-version 2 --no-nfs-version 3
+
+# Start the NFS mount daemon
+/usr/sbin/rpc.mountd --foreground --debug all --no-nfs-version 2 --no-nfs-version 3
