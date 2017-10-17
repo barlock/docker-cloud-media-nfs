@@ -1,4 +1,4 @@
-/local-union    *(rw,sync,fsid=1,no_root_squash,insecure,no_subtree_check)
-/local-encrypt  *(rw,sync,fsid=2,no_root_squash,insecure,no_subtree_check)
-/cloud-encrypt  *(rw,sync,fsid=2,no_root_squash,insecure,no_subtree_check)
-/cloud-decrypt  *(rw,sync,fsid=3,no_root_squash,insecure,no_subtree_check)
+/local-union    *(rw,sync,fsid=1,no_root_squash,insecure,no_subtree_check,no_wdelay)
+/local-encrypt  *(rw,sync,fsid=2,no_root_squash,insecure,no_subtree_check,no_wdelay)
+/cloud-encrypt  *(rw,sync,fsid=2,no_root_squash,insecure,no_subtree_check,no_wdelay)
+/cloud-decrypt  *(rw,sync,fsid=3,no_root_squash,insecure,no_subtree_check,no_wdelay)
