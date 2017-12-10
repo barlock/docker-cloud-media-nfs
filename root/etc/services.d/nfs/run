@@ -1,11 +1,5 @@
 #!/usr/bin/with-contenv sh
 
-while [ -z "$(ls -A /local-union)" ]
-do
-    echo "Waiting for mount /local-union ..."
-    sleep 10
-done
-
 . "/etc/default/nfs-kernel-server"
 
 # Reexport all directories

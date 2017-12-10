@@ -1,7 +1,7 @@
 ####################
 # BASE IMAGE
 ####################
-FROM barlock/cloud-media
+FROM barlock/cloud-media:latest
 
 MAINTAINER barlockm@gmail.com <barlockm@gmail.com>
 

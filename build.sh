@@ -1,3 +1,4 @@
-docker build -t barlock/cloud-media-nfs .
+#!/usr/bin/env bash
 
-docker push barlock/cloud-media-nfs
+docker build -t barlock/cloud-media-nfs:latest .
+docker push barlock/cloud-media-nfs:latest
