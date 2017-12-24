@@ -1,7 +1,7 @@
 ####################
 # BASE IMAGE
 ####################
-FROM barlock/cloud-media:plexdrive
+FROM barlock/cloud-media:ocamlfuse
 
 MAINTAINER barlockm@gmail.com <barlockm@gmail.com>
 
