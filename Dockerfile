@@ -1,7 +1,7 @@
 ####################
 # BASE IMAGE
 ####################
-FROM barlock/cloud-media:ocamlfuse
+FROM barlock/cloud-media:rclone
 
 MAINTAINER barlockm@gmail.com <barlockm@gmail.com>
 
