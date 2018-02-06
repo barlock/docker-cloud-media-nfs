@@ -1,7 +1,7 @@
 ####################
 # BASE IMAGE
 ####################
-FROM barlock/cloud-media:rclone
+FROM barlock/cloud-media:plexdrive5
 
 MAINTAINER barlockm@gmail.com <barlockm@gmail.com>
 
