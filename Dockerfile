@@ -1,7 +1,7 @@
 ####################
 # BASE IMAGE
 ####################
-FROM barlock/cloud-media:plexdrive5
+FROM barlock/cloud-media:bare
 
 MAINTAINER barlockm@gmail.com <barlockm@gmail.com>
 
